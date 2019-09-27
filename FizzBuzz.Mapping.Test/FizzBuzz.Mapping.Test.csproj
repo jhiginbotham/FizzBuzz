@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net462</TargetFrameworks>
+    <RootNamespace>FizzBuzz.Mapping.Test</RootNamespace>
+    <AssemblyName>FizzBuzz.Mapping.Test</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <FileAlignment>512</FileAlignment>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.6.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <PackageReference Include="RhinoMocks" Version="3.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzz.Api.Models\FizzBuzz.Api.Models.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Business.Models\FizzBuzz.Business.Models.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Framework.Mapping.Testing\FizzBuzz.Framework.Mapping.Testing.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Mapping\FizzBuzz.Mapping.csproj" />
+  </ItemGroup>
+
+</Project>

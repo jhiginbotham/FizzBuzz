@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net462</TargetFrameworks>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <FileAlignment>512</FileAlignment>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzz.Framework.Json\FizzBuzz.Framework.Json.csproj" />
+  </ItemGroup>
+
+</Project>

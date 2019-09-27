@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <RootNamespace>FizzBuzz.Api.Test</RootNamespace>
+    <AssemblyName>FizzBuzz.Api.Test</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <FileAlignment>512</FileAlignment>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.6.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <PackageReference Include="RhinoMocks" Version="3.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzz.Business\FizzBuzz.Business.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Api.Models\FizzBuzz.Api.Models.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Business.Models\FizzBuzz.Business.Models.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Api\FizzBuzz.Api.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Framework.Autofac.Testing\FizzBuzz.Framework.Autofac.Testing.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+</Project>

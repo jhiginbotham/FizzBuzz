@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <RootNamespace>FizzBuzz.Business.Test</RootNamespace>
+    <AssemblyName>FizzBuzz.Business.Implementation.Test</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <FileAlignment>512</FileAlignment>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.6.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <PackageReference Include="RhinoMocks" Version="3.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzz.Business\FizzBuzz.Business.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Business.Implementation\FizzBuzz.Business.Implementation.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Business.Models\FizzBuzz.Business.Models.csproj" />
+  </ItemGroup>
+
+</Project>

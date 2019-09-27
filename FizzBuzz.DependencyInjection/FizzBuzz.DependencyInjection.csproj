@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <RootNamespace>FizzBuzz.DependencyInjection</RootNamespace>
+    <AssemblyName>FizzBuzz.DependencyInjection</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <FileAlignment>512</FileAlignment>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzz.Framework.Autofac\FizzBuzz.Framework.Autofac.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Business\FizzBuzz.Business.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Business.Implementation\FizzBuzz.Business.Implementation.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Framework.Mapping.DependencyInjection\FizzBuzz.Framework.Mapping.DependencyInjection.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Mapping\FizzBuzz.Mapping.csproj" />
+  </ItemGroup>
+
+</Project>

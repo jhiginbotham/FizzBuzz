@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <RootNamespace>FizzBuzz.Api</RootNamespace>
+    <AssemblyName>FizzBuzz.Api</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <FileAlignment>512</FileAlignment>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <OutputType>Exe</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.1" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.OpenApi" Version="1.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzz.Framework.Autofac\FizzBuzz.Framework.Autofac.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Business\FizzBuzz.Business.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Api.Models\FizzBuzz.Api.Models.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Business.Models\FizzBuzz.Business.Models.csproj" />
+    <ProjectReference Include="..\FizzBuzz.DependencyInjection\FizzBuzz.DependencyInjection.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Framework.Mapping.DependencyInjection\FizzBuzz.Framework.Mapping.DependencyInjection.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Framework.Mapping\FizzBuzz.Framework.Mapping.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+</Project>

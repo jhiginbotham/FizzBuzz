@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <RootNamespace>FizzBuzz.Mapping</RootNamespace>
+    <AssemblyName>FizzBuzz.Mapping</AssemblyName>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <FileAlignment>512</FileAlignment>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzz.Api.Models\FizzBuzz.Api.Models.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Business.Models\FizzBuzz.Business.Models.csproj" />
+    <ProjectReference Include="..\FizzBuzz.Framework.Mapping\FizzBuzz.Framework.Mapping.csproj" />
+  </ItemGroup>
+
+</Project>
